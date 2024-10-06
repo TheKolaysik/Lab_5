@@ -1,12 +1,14 @@
 #include <locale.h>
 #include <stdio.h>
 #include <math.h>
-#define M_PI 3.14159265358979323846
 
 
 void main() {
-	float gr;
-	scanf("%f", &gr);
-	gr = gr * M_PI / 180;
-	printf("%.6f", sin(gr));
+	float x, y, k=7, a, b;
+	scanf("%f", &x);
+	a = pow(k + x, 3);
+	b = log10(fabs(k * x));
+	y = pow(b, 2) + sqrt(fabs(a));
+	printf("%.3f", y);
+
 }
